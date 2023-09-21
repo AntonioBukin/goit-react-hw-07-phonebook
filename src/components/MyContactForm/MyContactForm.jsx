@@ -7,7 +7,8 @@ import { nanoid } from 'nanoid';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import css from './my-contact-form.module.scss';
-import { addContact, getContacts } from 'redux/contactsSlice';
+import { addContact } from 'redux/operations';
+import {getContacts} from "redux/selectors";
 
 const notifyOptions = {
   position: 'top-right',

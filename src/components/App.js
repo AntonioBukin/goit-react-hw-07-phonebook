@@ -1,6 +1,6 @@
 import { ToastContainer } from 'react-toastify';
 import ContactForm from './MyContactForm/MyContactForm.jsx';
-import MyContactList from './MyPhoneList/MyContactList.jsx';
+import MyContactList from './MyContactList/MyContactList.jsx';
 import Filter from './Filter/Filter.jsx';
 
 export function App() {
