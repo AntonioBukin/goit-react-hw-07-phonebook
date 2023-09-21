@@ -11,10 +11,7 @@ export const ContactItem = ({ name, phone }) => {
         <span>
           {name}: {phone}
         </span>
-        <button
-          className={css.btnDel}
-          onClick={() => dispatch(useDispatch)}
-        >
+        <button className={css.btnDel} onClick={() => dispatch(useDispatch)}>
           Delete
         </button>
       </p>

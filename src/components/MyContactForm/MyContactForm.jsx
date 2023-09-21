@@ -8,7 +8,7 @@ import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import css from './my-contact-form.module.scss';
 import { addContact } from 'redux/operations';
-import {getContacts} from "redux/selectors";
+import { getContacts } from 'redux/selectors';
 
 const notifyOptions = {
   position: 'top-right',
@@ -110,4 +110,3 @@ function ContactForm() {
 }
 
 export default ContactForm;
-

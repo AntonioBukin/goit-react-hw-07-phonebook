@@ -9,7 +9,7 @@ function ContactList() {
   return (
     <ul className={css.contacts}>
       {filteredContacts.map(({ id, name, phone }) => (
-        <ContactItem key={id} id={id} name={name} phone={phone} />
+        <ContactItem key={id} name={name} phone={phone} />
       ))}
     </ul>
   );
