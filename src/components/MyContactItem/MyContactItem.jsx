@@ -1,9 +1,11 @@
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
+//import { TiUserDeleteOutline } from 'react-icons/ti';
+//import { useState } from 'react';
 import css from './my-contact-item.module.scss';
 
 //phone
-export const ContactItem = ({ name, phone}) => {
+export const ContactItem = ({ id, name, phone}) => {
   const dispatch = useDispatch();
 
   return (
