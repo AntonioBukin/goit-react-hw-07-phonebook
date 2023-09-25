@@ -1,7 +1,6 @@
 import { ToastContainer } from 'react-toastify';
 import MyContactForm from './MyContactForm/MyContactForm.jsx';
 import MyContactList from './MyContactList/MyContactList.jsx';
-//import {ContactItem} from "./MyContactItem/MyContactItem.jsx";
 import Filter from './Filter/Filter.jsx';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
@@ -12,7 +11,6 @@ export function App() {
   const dispatch = useDispatch();
   const isLoading = useSelector(selectIsLoading);
   const error = useSelector(selectError);
-  //const deleteId = useSelector(selectDeleteId);
 
   useEffect(() => {
     dispatch(fetchContacts());
@@ -31,7 +29,6 @@ export function App() {
         )}
       </div>
       <MyContactList />
-      {/* <ContactItem id={deleteId}/> */}
       <ToastContainer />
     </div>
   );
